@@ -34,7 +34,7 @@ This is a native static theme. The installed package contains only a manifest an
 - The artwork is tuned for Edge's horizontal tabs on Windows, using the 150% display-scaling setup it was developed with. Other scaling settings and browser layouts may align differently. Chrome is not a supported target.
 - Header images are 4095 pixels wide and stay anchored on the left. Browser theme images have a fixed size; Edge may repeat the header beyond that width.
 - The wallpaper is exported at 2560 × 1440 from a 3840 × 2160 source. Display support does not mean every packaged image is native 4K.
-- The theme supplies a new-tab background, but Edge's new-tab settings can override it. Search-box position and other new-tab widgets are controlled by Edge.
+- The new-tab wallpaper requests [horizontal centering with top alignment](https://chromium.googlesource.com/chromium/src.git/+/c31b72bcf79c48426d3854abd5c4ee5f16abf752/docs/theme_creation_guide.md#ntp_background_alignment), so a narrower window crops the forest on both sides of Fran. Edge controls the final sizing, and its new-tab settings can override the theme background. Search-box position and other new-tab widgets are controlled by Edge.
 - The translucent appearance is baked into the images. A theme cannot add live blur, custom tab borders or shadows, change native fonts or tab heights, or style websites.
 
 ## Build and package

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Fran, Sky Blue",
-  "version": "0.3.18",
+  "version": "0.3.19",
   "description": "A theme dedicated to Fran from Unicorn Overlord, with translucent-style tabs, a light blue toolbar, and support for 4K displays.",
   "theme": {
     "images": {
@@ -133,7 +133,7 @@
       ]
     },
     "properties": {
-      "ntp_background_alignment": "left top",
+      "ntp_background_alignment": "center top",
       "ntp_background_repeat": "no-repeat",
       "ntp_logo_alternate": 1
     }

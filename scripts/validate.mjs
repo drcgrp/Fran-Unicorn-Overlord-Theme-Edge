@@ -54,12 +54,15 @@ for (const tint of Object.values(manifest.theme.tints)) {
   assert(Array.isArray(tint) && tint.length === 3 && tint.every(value => Number.isFinite(value) && value >= -1 && value <= 1));
 }
 assert.deepEqual(manifest.theme.properties, {
-  ntp_background_alignment: 'left top',
+  ntp_background_alignment: 'center top',
   ntp_background_repeat: 'no-repeat',
   ntp_logo_alternate: 1,
 });
 
-const packageEntries = await fs.readdir(packageRoot, { withFileTypes: true });
+// Edge writes this cache beside the manifest when the unpacked theme is loaded.
+// It is local browser state, and package.mjs never includes it in the ZIP.
+const packageEntries = (await fs.readdir(packageRoot, { withFileTypes: true }))
+  .filter(entry => !(entry.name === 'Cached Theme.pak' && entry.isFile()));
 assert.deepEqual(packageEntries.map(entry => entry.name).sort(), ['images', 'manifest.json']);
 assert(packageEntries.find(entry => entry.name === 'images').isDirectory());
 assert(packageEntries.find(entry => entry.name === 'manifest.json').isFile());
