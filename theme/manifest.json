@@ -1,0 +1,141 @@
+{
+  "manifest_version": 3,
+  "name": "Fran, Sky Blue",
+  "version": "0.3.18",
+  "description": "A theme dedicated to Fran from Unicorn Overlord, with translucent-style tabs, a light blue toolbar, and support for 4K displays.",
+  "theme": {
+    "images": {
+      "theme_frame": "images/frame.png",
+      "theme_frame_inactive": "images/frame-inactive.png",
+      "theme_toolbar": "images/toolbar.png",
+      "theme_ntp_background": "images/ntp.png",
+      "theme_tab_background": "images/background-tab.png",
+      "theme_tab_background_inactive": "images/background-tab-inactive.png"
+    },
+    "colors": {
+      "frame": [
+        190,
+        220,
+        236
+      ],
+      "frame_inactive": [
+        200,
+        226,
+        239
+      ],
+      "frame_incognito": [
+        36,
+        53,
+        65
+      ],
+      "frame_incognito_inactive": [
+        51,
+        67,
+        77
+      ],
+      "toolbar": [
+        169,
+        197,
+        213
+      ],
+      "tab_text": [
+        16,
+        38,
+        48
+      ],
+      "tab_background_text": [
+        16,
+        38,
+        48
+      ],
+      "tab_background_text_inactive": [
+        16,
+        38,
+        48
+      ],
+      "tab_background_text_incognito": [
+        245,
+        248,
+        250
+      ],
+      "tab_background_text_incognito_inactive": [
+        227,
+        237,
+        242
+      ],
+      "bookmark_text": [
+        16,
+        38,
+        48
+      ],
+      "toolbar_text": [
+        16,
+        38,
+        48
+      ],
+      "toolbar_button_icon": [
+        16,
+        38,
+        48
+      ],
+      "omnibox_background": [
+        217,
+        231,
+        238
+      ],
+      "omnibox_text": [
+        16,
+        38,
+        48
+      ],
+      "ntp_background": [
+        248,
+        251,
+        245
+      ],
+      "ntp_text": [
+        44,
+        65,
+        48
+      ],
+      "ntp_link": [
+        78,
+        112,
+        70
+      ],
+      "button_background": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ],
+      "frame": [
+        -1,
+        -1,
+        -1
+      ],
+      "frame_inactive": [
+        -1,
+        -1,
+        -1
+      ],
+      "background_tab": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "left top",
+      "ntp_background_repeat": "no-repeat",
+      "ntp_logo_alternate": 1
+    }
+  }
+}

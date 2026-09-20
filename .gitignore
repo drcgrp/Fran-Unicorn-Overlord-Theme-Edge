@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+Cached Theme.pak
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
