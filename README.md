@@ -2,11 +2,25 @@
 
 A theme dedicated to Fran from Unicorn Overlord, with translucent-style tabs, a light blue toolbar, and support for 4K displays.
 
+## [↓ Download for Microsoft Edge (.zip)](https://github.com/drcgrp/Fran-Unicorn-Overlord-Theme-Edge/raw/refs/heads/main/downloads/fran-sky-blue.zip)
+
+**[Installation instructions](#install-in-microsoft-edge)** · [SHA-256 checksum](downloads/fran-sky-blue.zip.sha256)
+
+## Screenshots
+
+The full browser window, with the forest wallpaper and sky-blue toolbar:
+
+![Fran, Sky Blue in Microsoft Edge, showing the themed toolbar and Fran riding a griffon on the new-tab page](docs/screenshots/full-window.png)
+
+A closer look at Fran's eyes behind the translucent-style tabs:
+
+![Close-up of Fran's eyes across the tab strip, with the blue address bar and bookmarks beneath](docs/screenshots/tab-detail.png)
+
 Fran and the landscape extend across the browser header. The open area beside the tabs keeps the original artwork, while the tabs and toolbar use a blue wash for readability. The wash strengthens behind the bookmarks bar. The new-tab wallpaper shows Fran riding a griffon through a forest.
 
 ## Install in Microsoft Edge
 
-1. Download `fran-sky-blue.zip` from the [latest release](https://github.com/drcgrp/Fran-Unicorn-Overlord-Theme-Edge/releases/latest).
+1. **[Download fran-sky-blue.zip](https://github.com/drcgrp/Fran-Unicorn-Overlord-Theme-Edge/raw/refs/heads/main/downloads/fran-sky-blue.zip).**
 2. Extract it into a folder you will keep on your computer.
 3. Open `edge://extensions` and turn on **Developer mode**.
 4. Choose **Load unpacked** and select the extracted folder containing `manifest.json`.
@@ -37,6 +51,8 @@ npm run package
 `assets/header.png` and `assets/wallpaper.jpg` are the source artwork. The build produces the six images in `theme/images/`; the manifest is maintained in `theme/manifest.json`.
 
 Validation checks the package allowlist, manifest, image dimensions, and PNG metadata. Packaging writes `dist/fran-sky-blue.zip` and its SHA-256 checksum. The ZIP contains only the seven installable theme files, with fixed archive timestamps and no build tools or source artwork.
+
+`downloads/` contains the ready-to-install ZIP linked above. When the theme changes, rebuild the package and copy the ZIP and checksum from `dist/` into `downloads/`. README screenshots stay outside the installable package.
 
 ## Releases
 
